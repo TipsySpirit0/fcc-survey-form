@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+      <h1 id="title">Friendship Survey Form</h1>
+      <p id="description">Finding you a new Friend for life</p>
+      </header>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <Input id="name" type="text" placeholder="enter your name here" required></Input>
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <Input id="email" type="email" placeholder="e.g someone@gmail.com" required></Input>
+        </div>
+        <div>
+          <label for="age" id="number-label">Age</label>
+          <Input id="number" type="number" placeholder="enter your age here" min="1" max="250" required></Input>
+        </div>
+        <br>
+        <h3>What is your favourite sport</h3>
+        <select id="dropdown" required>
+          <option>Football(soccer)</option>
+          <option>Basketball</option>
+          <option>Baseball</option>
+        </select>
+        <br>
+        <div>
+          <h3>How Would You Describe Your Personality</h3>
+          <input type="radio" name="personality" class="radio"  value="1"></input><label>Fun</label>
+          <input type="radio" name="personality" class="radio"  value="2"></input><label>Annoying</label>
+          <input type="radio" name="personality" class="radio"  value="3"></input><label>Clingy</label>
+        </div>
+        <br><hr>
+        <div>
+          <h3>What are you looking for in a friend?</h3>
+            <input type="checkbox" name="personality" value="1"></input>
+             <label>
+            Extroverted
+          </label>
+          
+            <input type="checkbox" value="2"></input>
+            <label>
+            Introverted
+          </label>
+          
+            <input type="checkbox" value="3"></input>
+            <label>
+              Dog Lover
+          </label>
+          
+            <input type="checkbox"  value="4"></input>
+            <label>
+              Cat Lover
+          </label>
+          <br>
+          <h3>Tell us more about your ideal friend</h3>
+
+<textarea placeholder="Enter Your Thoughts"></textarea>
+
+          <button id="submit" type="submit">Submit<button>
+
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
